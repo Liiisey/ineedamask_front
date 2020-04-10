@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
-import SearchListContainer from "../containers/SearchListContainer";
+import {View} from 'react-native';
+import SearchListContainer from '../containers/SearchListContainer';
 
-class ResultScreen extends Component {
+class SearchListScreen extends Component {
     render() {
-        const {navigate} = this.props.navigation;
         return (
             <View>
-                <Text>Result page</Text>
-                <SearchListContainer navigate={navigate}/>
+                <SearchListContainer navigate={this.props.navigation.navigate}/>
             </View>
         );
     }
 }
 
 
-export default ResultScreen;
+export default SearchListScreen;

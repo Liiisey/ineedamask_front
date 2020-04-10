@@ -1,32 +1,22 @@
-# 01/04/2020 : Poisson d'avril !
+#Création d’une application mobile : _I Need A Mask_
 
-# Démarrage d'un nouveau projet
+## Création d'un projet React Native
 
-## Installation
+Lancer les commandes suivantes :
+```shell script
+npm install -g expo-cli
+expo init --template blank ineedamask_front
+```
 
-C'est la grosse galère, que des erreurs ! 
-Donc j'ai récupérer le répertoire de Pierre sur github (https://github.com/digital-campus-rennes/dcdev3-globalstate).
-
-Ensuite, lancer la commande
+Installation des dépendances :
 ```shell script
 npm install
-```
-
-Après, lancer la commande
-```shell script
 npm install redux react-redux
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/drawer
+npm install redux-thunk
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 ```
-
-Créer le répertoire actions/
-Et à l'intérieur créer le fichier person.js 
-
-Créer le répertoire reducers/
-Et à l'intérieur créer le fichier person.js + le fichier person.js
-
-Créer le répertoire components/
-Et à l'intérieur créer le fichier PersonList.js
-
-Créer le répertoire containers/
-Et à l'intérieur créer le fichier PersonListContainer.js
-
 

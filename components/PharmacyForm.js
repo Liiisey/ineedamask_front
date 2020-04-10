@@ -13,7 +13,7 @@ class PharmacyForm extends Component {
         console.log(this.state.longitude);
         console.log(this.state.latitude);
         console.log(this.state.mask);
-        this.props.addPharmacy({
+        this.props.pharmacyAdd({
             name: this.state.name,
             address: this.state.address,
             longitude: this.state.longitude,

@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
-import PharmacyListContainer from '../containers/PharmacyListContainer';
+import {createStackNavigator} from '@react-navigation/stack';
+import SearchListScreen from './SearchListScreen';
+import SearchResultScreen from './SearchResultScreen';
 
-class PharmaSearchScreen extends Component {
+const Stack = createStackNavigator();
+
+class SearchScreen extends Component {
     render() {
         return (
-            <View>
-                <Text>Search pharmacies page</Text>
-                <PharmacyListContainer/>
-            </View>
+            <Stack.Navigator>
+                <Stack.Screen name='Search' component={SearchListScreen}/>
+                <Stack.Screen name='Result' options={{title:'Pharmacy'}} component={SearchResultScreen}/>
+            </Stack.Navigator>
         );
     }
 }
 
-export default PharmaSearchScreen;
+
+export default SearchScreen;

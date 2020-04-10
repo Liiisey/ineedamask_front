@@ -1,16 +1,18 @@
 import {connect} from 'react-redux';
-import {addPharmacy} from '../actions/pharmacy';
+import {pharmacyAdd} from '../actions/pharmacy';
 import PharmacyForm from '../components/PharmacyForm';
 
-const mapStateToProps = state => {
-    return {};
-};
+/*const mapStateToProps = state => {
+    return {
+
+    };
+};*/
 
 const mapDispatchToProps = dispatch => {
     return {
-        addPharmacy: pharmacy => dispatch(addPharmacy(pharmacy))
+        pharmacyAdd: pharmacy => dispatch(pharmacyAdd(pharmacy))
     };
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(PharmacyForm);
+export default connect(/*mapStateToProps,*/ mapDispatchToProps)(PharmacyForm);

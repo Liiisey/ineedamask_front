@@ -2,11 +2,11 @@ import {connect} from 'react-redux';
 import {pharmacyAdd} from '../actions/pharmacy';
 import PharmacyForm from '../components/PharmacyForm';
 
-/*const mapStateToProps = state => {
+const mapStateToProps = state => {
     return {
 
     };
-};*/
+};
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => {
 };
 
 
-export default connect(/*mapStateToProps,*/ mapDispatchToProps)(PharmacyForm);
+export default connect(mapStateToProps, mapDispatchToProps)(PharmacyForm);
